@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Cormorant+Garamond:wght@400;500;600;700&family=Patrick+Hand&display=swap");
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -127,4 +129,46 @@
   html {
     @apply font-sans;
     }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}
+
+.watercolor-bg {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(122, 135, 102, 0.22), transparent 28%),
+    radial-gradient(circle at 100% 8%, rgba(175, 151, 198, 0.18), transparent 26%),
+    radial-gradient(circle at 0% 100%, rgba(117, 128, 96, 0.2), transparent 30%),
+    radial-gradient(circle at 100% 100%, rgba(122, 135, 102, 0.16), transparent 32%),
+    linear-gradient(135deg, #f4f0e6 0%, #fffdf7 45%, #ece8dc 100%);
+}
+
+.watercolor-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    radial-gradient(circle at 20% 18%, rgba(77, 91, 60, 0.18), transparent 12%),
+    radial-gradient(circle at 88% 72%, rgba(77, 91, 60, 0.12), transparent 14%),
+    radial-gradient(circle at 12% 82%, rgba(108, 74, 160, 0.12), transparent 12%);
+  filter: blur(16px);
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-script {
+  font-family: "Cookie", cursive;
+}
+
+.font-handwritten {
+  font-family: "Patrick Hand", cursive;
 }

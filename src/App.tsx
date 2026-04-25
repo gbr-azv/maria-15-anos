@@ -1,23 +1,22 @@
-import { Button } from "@/components/ui/button"
+import { useState } from "react"
+import { AnimatePresence } from "motion/react"
+
+import { InvitationContent } from "@/components/invitation/InvitationContent"
+import { InvitationCover } from "@/components/invitation/InvitationCover"
+import { Toaster } from "@/components/ui/sonner"
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
-    <main className="flex min-h-screen items-center justify-center bg-pink-50 p-6">
-      <div className="max-w-md rounded-3xl bg-white p-8 text-center shadow-xl">
-        <p className="mb-2 text-sm uppercase tracking-[0.3em] text-pink-400">
-          Convite
-        </p>
+    <main className="relative min-h-screen overflow-x-hidden bg-[#f4f0e6] text-[#35452d]">
+      <InvitationContent isOpen={isOpen} />
 
-        <h1 className="mb-4 text-4xl font-bold text-pink-700">
-          15 anos
-        </h1>
+      <AnimatePresence>
+        {!isOpen && <InvitationCover onOpen={() => setIsOpen(true)} />}
+      </AnimatePresence>
 
-        <p className="mb-6 text-gray-600">
-          Ambiente inicial configurado com sucesso.
-        </p>
-
-        <Button>Começar convite</Button>
-      </div>
+      <Toaster position="top-center" richColors />
     </main>
   )
 }
