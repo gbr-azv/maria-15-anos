@@ -213,7 +213,7 @@ export function AdminDashboard({ user }: AdminDashboardProps) {
             src="/images/flower-upper-right-corner.png"
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute -right-28 -top-28 w-[360px] opacity-50 sm:w-[520px]"
+            className="pointer-events-none absolute -right-28 -top-28 w-90 opacity-50 sm:w-130"
           />
 
           <div className="relative z-10 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">

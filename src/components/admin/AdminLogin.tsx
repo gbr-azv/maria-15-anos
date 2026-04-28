@@ -48,14 +48,14 @@ export function AdminLogin() {
         src="/images/flower-upper-right-corner.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -right-28 -top-24 w-[380px] opacity-80 sm:w-[560px]"
+        className="pointer-events-none absolute -right-28 -top-24 w-95 opacity-80 sm:w-140"
       />
 
       <img
         src="/images/flower-lower-left-corner.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-32 -left-32 w-[420px] opacity-80 sm:w-[600px]"
+        className="pointer-events-none absolute -bottom-32 -left-32 w-105 opacity-80 sm:w-150"
       />
 
       <div className="relative w-full max-w-md rounded-[2.5rem] border border-[#536343]/20 bg-[#fffdf7]/85 p-6 shadow-2xl backdrop-blur-md sm:p-8">
