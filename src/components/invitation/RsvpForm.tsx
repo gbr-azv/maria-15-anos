@@ -316,7 +316,7 @@ export function RsvpForm() {
         </p>
 
         <h2 className="font-script mt-2 text-4xl text-[#6c4aa0]">
-          até 11 de maio
+          até 6 de maio
         </h2>
 
         <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-[#66705d]">

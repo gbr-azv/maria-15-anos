@@ -133,7 +133,7 @@ export function InvitationContent({ isOpen }: InvitationContentProps) {
               animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.75 }}
             >
-              <p className="font-handwritten text-3xl leading-relaxed text-[#4f5d43] sm:text-4xl">
+              <p className="font-serif text-3xl leading-relaxed text-[#4f5d43] sm:text-4xl">
                 Um dia para relaxar, se divertir e criar boas memórias!
               </p>
             </motion.div>
